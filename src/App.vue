@@ -1,15 +1,25 @@
 <template>
-	<div id="app">
-		<router-view />
-	</div>
+  <div id="app">
+    <router-view />
+    <Footer></Footer>
+  </div>
 </template>
 
 <script>
 import "bulma";
+import Footer from "@/components/Footer";
 export default {
-	name: "app",
-	components: {}
+  name: "app",
+  components: { Footer }
 };
 </script>
 
-<style></style>
+<style>
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 250px;
+}
+</style>

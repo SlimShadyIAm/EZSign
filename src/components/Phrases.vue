@@ -17,8 +17,8 @@ export default {
   data() {
     return {
       phrasesData: [
-        { id: uuid.v4(), phraseText: "Helloooo" },
-        { id: uuid.v4(), phraseText: "Helloooo" }
+        { id: uuid.v4(), phraseText: "Thank you!" },
+        { id: uuid.v4(), phraseText: "Uh oh stinky" }
       ]
     };
   }
