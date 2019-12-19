@@ -16,6 +16,12 @@ export default new Router({
 			name: "transcribe",
 			component: () =>
 				import(/* webpackChunkName: "about" */ "./views/Transcribe.vue")
+		},
+		{
+			path: "/phrases",
+			name: "phrases",
+			component: () =>
+				import(/* webpackChunkName: "about" */ "./views/Phrases.vue")
 		}
 	]
 });

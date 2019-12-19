@@ -4,7 +4,9 @@
 			<router-link to="/transcribe" class="button is-info"
 				>Transcribe Sign Language</router-link
 			>
-			<a class="button is-info">Frequent responses</a>
+			<router-link to="/phrases" class="button is-info"
+				>Frequent responses</router-link
+			>
 		</div>
 	</div>
 </template>
