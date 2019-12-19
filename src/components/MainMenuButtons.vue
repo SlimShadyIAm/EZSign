@@ -1,7 +1,9 @@
 <template>
 	<div class="columns buttons">
 		<div class="column">
-			<a class="button is-info">Transcribe Sign Language</a>
+			<router-link to="/transcribe" class="button is-info"
+				>Transcribe Sign Language</router-link
+			>
 			<a class="button is-info">Frequent responses</a>
 		</div>
 	</div>

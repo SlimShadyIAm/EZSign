@@ -17,4 +17,8 @@
 export default { name: "Header" };
 </script>
 
-<style></style>
+<style>
+.hero {
+	margin-bottom: 20px;
+}
+</style>
