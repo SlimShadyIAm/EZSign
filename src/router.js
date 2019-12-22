@@ -1,10 +1,11 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Home from "@/views/Home.vue";
+import VueRouterBackButton from "vue-router-back-button";
 
 Vue.use(Router);
 
-export default new Router({
+const router = new Router({
 	routes: [
 		{
 			path: "/",
@@ -25,3 +26,7 @@ export default new Router({
 		}
 	]
 });
+
+Vue.use(VueRouterBackButton, { router });
+
+export default router;

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header></Header>
+    <Header text="Home" subtext="Overview of all the translation options" />
     <MainMenuButtons></MainMenuButtons>
   </div>
 </template>
