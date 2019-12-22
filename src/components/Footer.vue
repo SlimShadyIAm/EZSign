@@ -11,7 +11,9 @@
 					>
 				</div>
 				<div class="column is-half">
-					<router-link to="/" class="button is-info">Home</router-link>
+					<router-link to="/" class="button is-info"
+						>Home</router-link
+					>
 				</div>
 			</div>
 		</div>

@@ -7,8 +7,8 @@
 					<p>Information</p>
 				</div>
 				<div class="message-body">
-					Hello! My name is John Doe. This app will translate my sign language.
-					Press "Start Transcribing" and record me!
+					Hello! My name is John Doe. This app will translate my sign
+					language. Press "Start Transcribing" and record me!
 				</div>
 			</article>
 			<a href="" class="button">Start Transcribing</a>
