@@ -1,8 +1,8 @@
 <template>
-	<div id="app">
-		<Header text="Home" subtext="Overview of all the translation options" />
-		<MainMenuButtons></MainMenuButtons>
-	</div>
+    <div id="app">
+        <Header text="Home" subtext="Overview of all the translation options" />
+        <MainMenuButtons></MainMenuButtons>
+    </div>
 </template>
 
 <script>
@@ -11,11 +11,11 @@ import Header from "@/components/Header";
 import MainMenuButtons from "@/components/MainMenuButtons";
 
 export default {
-	name: "Home",
-	components: {
-		Header,
-		MainMenuButtons
-	}
+    name: "Home",
+    components: {
+        Header,
+        MainMenuButtons
+    }
 };
 </script>
 
