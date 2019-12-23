@@ -11,6 +11,7 @@
 		"core-js": "^3.4.3",
 		"uuid": "^3.3.3",
 		"vue": "^2.6.10",
+		"vue-material-design-icons": "^4.4.0",
 		"vue-router-back-button": "^1.2.3"
 	},
 	"devDependencies": {
