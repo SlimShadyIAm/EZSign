@@ -1,18 +1,26 @@
 <template>
-	<div>
-		<a class="button is-info is-large">{{ phrase }}</a>
-	</div>
+  <div class="columns is-mobile">
+    <div class="column" v-if="!editMode">
+      <a class="button is-info is-large">{{ phrase }}</a>
+    </div>
+    <div class="column is-four-fifths" v-if="editMode">
+      <a class="button is-info is-large">{{ phrase }}</a>
+    </div>
+    <div class="column is-one-fifth" v-if="editMode">
+      <a class="button is-danger is-large">del</a>
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
-	name: "Phrase",
-	props: ["phrase"]
+  name: "Phrase",
+  props: ["phrase", "editMode"]
 };
 </script>
 
 <style>
 .button {
-	margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 </style>
