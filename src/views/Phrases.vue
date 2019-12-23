@@ -1,5 +1,5 @@
 <template>
-	<div id="app">
+	<div class="content">
 		<Header
 			text="Quick responses"
 			subtext="This is a list of your saved quick responses. Because sometimes it's easier to just tap on what you want, rather than sign the same thing out over and over."

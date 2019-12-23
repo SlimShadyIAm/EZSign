@@ -15,11 +15,24 @@ export default {
 </script>
 
 <style>
+html,
+body {
+	height: 100%;
+}
+
+#app {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.content {
+	flex: 1 0 auto;
+	/* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+}
 .footer {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 150px;
+	flex-shrink: 0;
+	/* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+	padding: 20px;
 }
 </style>

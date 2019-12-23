@@ -35,6 +35,10 @@ export default { name: "Header", props: ["text", "subtext"] };
 	font-size: 26px;
 }
 
+.subtitle {
+	font-size: 22px !important;
+}
+
 .navbar-brand {
 	font-weight: 800;
 }

@@ -8,6 +8,7 @@
 				:editMode="editMode"
 				v-on:delete="toDelete(phrase.id)"
 			/>
+			<AddPhrase v-on:add-phrase="addPhrase" v-if="editMode"></AddPhrase>
 			<a
 				v-if="!editMode"
 				@click="editMode = !editMode"
@@ -31,10 +32,12 @@
 <script>
 import uuid from "uuid";
 import Phrase from "@/components/Phrase";
+import AddPhrase from "@/components/AddPhrase";
 export default {
 	name: "Phrases",
 	components: {
-		Phrase
+		Phrase,
+		AddPhrase
 	},
 	data() {
 		return {
@@ -74,6 +77,9 @@ export default {
 				);
 			});
 			this.editMode = !this.editMode;
+		},
+		addPhrase(newPhrase) {
+			this.phrases = [...this.phrases, newPhrase];
 		}
 	}
 };
