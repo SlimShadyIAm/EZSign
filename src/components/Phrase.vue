@@ -1,5 +1,5 @@
 <template>
-    <div class="columns is-mobile" :class="deleted ? 'grayscale' : ''">
+    <div class="columns is-mobile" :class="deleted && editMode ? 'grayscale' : ''">
         <div class="column" v-if="!editMode">
             <a class="button is-info is-large" @click="modalActive = !modalActive">{{ phrase }}</a>
         </div>
