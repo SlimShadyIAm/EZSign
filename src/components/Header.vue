@@ -31,10 +31,9 @@ export default {
     props: ["text", "subtext"]
 };
 </script>
-
 <style>
 .hero {
-    /* margin-bottom: 20px; */
+    margin-bottom: 20px;
 }
 .route {
     font-style: italic;

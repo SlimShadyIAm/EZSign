@@ -1,7 +1,6 @@
 <template>
     <div id="app">
         <Header text="EZ-Sign - Home" subtext="Overview of all the translation options" />
-        <br />
         <MainMenuButtons></MainMenuButtons>
     </div>
 </template>
