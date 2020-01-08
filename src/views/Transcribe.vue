@@ -29,7 +29,7 @@
 			/>
 		</div>
 		<Transcribed
-			:text="nextPhrase ? nextPhrase : 'Iced Coffee'"
+			:text="nextPhrase"
 			:modalActive="modalActive"
 			v-on:close="modalActive = !modalActive"
 		></Transcribed>
@@ -39,14 +39,12 @@
 <script>
 import Header from "@/components/Header";
 import Transcribed from "@/components/Transcribed";
-// import VideoIcon from "vue-material-design-icons/Video.vue";
 
 export default {
 	name: "Transcribe",
 	components: {
 		Header,
 		Transcribed
-		// VideoIcon
 	},
 	mounted: function() {
 		this.phrases = this.$store.getters.phrases.phrases;

@@ -3,18 +3,18 @@
 		<div class="modal-background"></div>
 		<div class="modal-card">
 			<header class="modal-card-head">
-				<p class="modal-card-title">Select a Scenario</p>
+				<p class="modal-card-title">Select a scenario for the test</p>
 			</header>
 			<section class="modal-card-body">
-				<div class="columns">
+				<div class="columns is-mobile is-multiline">
 					<div
 						class="column is-6"
 						v-for="phrase in phrases"
 						:key="phrase.id"
 					>
-						<a @click="choosePhrase(phrase)" class="button">{{
-							phrase.name
-						}}</a>
+						<a @click="choosePhrase(phrase)" class="button">
+							{{ phrase.name }}
+						</a>
 					</div>
 				</div>
 			</section>

@@ -63,7 +63,7 @@ export default {
           ]
         },
         {
-          name: "Borrowing/returning a book from/to a library",
+          name: "Library",
           id: uuid.v4(),
           phrases: [
             "I would like to borrow Harry Potter, Prisoner of Azkaban.",
