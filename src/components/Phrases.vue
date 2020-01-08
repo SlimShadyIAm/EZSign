@@ -58,11 +58,8 @@ export default {
     },
     methods: {
         toDelete(id) {
-            // console.log(this.delete);
-            // console.log(id);
             var found = false;
             for (var i = 0; i < this.delete.length; i++) {
-                // console.log(this.delete[i]);
                 if (this.delete[i] == id) {
                     console.log("FOUND");
                     found = true;
