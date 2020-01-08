@@ -1,6 +1,11 @@
 <template>
     <div class="content">
-        <Header></Header>
+        <Header
+            text="EZ-Sign - Transcribe"
+            subtext="Using the camera app, you can record some sign language
+                        and the app will Automagically translate it to written
+                        text!"
+        ></Header>
         <div class="flex-container">
             <article class="message is-info">
                 <div class="message-header">
