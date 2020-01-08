@@ -12,11 +12,9 @@
 						v-for="phrase in phrases"
 						:key="phrase.id"
 					>
-						<a
-							@click="choosePhrase(phrase.phrases)"
-							class="button"
-							>{{ phrase.name }}</a
-						>
+						<a @click="choosePhrase(phrase)" class="button">{{
+							phrase.name
+						}}</a>
 					</div>
 				</div>
 			</section>

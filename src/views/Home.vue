@@ -2,7 +2,10 @@
 	<div id="app">
 		<Header
 			text="EZ-Sign - Home"
-			subtext="Overview of all the translation options"
+			:subtext="
+				'Overview of all the translation options, chosen scenario: ' +
+					$store.getters.phrases.name
+			"
 		/>
 		<MainMenuButtons :phrases="chosenPhrase"></MainMenuButtons>
 		<SelectScenario

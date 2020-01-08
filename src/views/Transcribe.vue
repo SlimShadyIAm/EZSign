@@ -49,7 +49,7 @@ export default {
 		// VideoIcon
 	},
 	mounted: function() {
-		this.phrases = this.$store.getters.phrases;
+		this.phrases = this.$store.getters.phrases.phrases;
 		console.log(this.phrases);
 	},
 	data() {
