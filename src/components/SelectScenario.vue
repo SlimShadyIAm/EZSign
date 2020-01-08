@@ -10,7 +10,7 @@
 					<div
 						class="column is-6"
 						v-for="phrase in phrases"
-						:key="phrase.id"
+						:key="phrase.name"
 					>
 						<a @click="choosePhrase(phrase)" class="button">
 							{{ phrase.name }}
@@ -25,11 +25,13 @@
 <script>
 export default {
 	name: "SelectScenario",
-	props: ["phrases"],
 	data() {
 		return {
 			modalActive: true
 		};
+	},
+	beforeMount: function() {
+		this.phrases = this.$store.getters.getAllPhrases;
 	},
 	methods: {
 		closeModal() {
@@ -38,7 +40,6 @@ export default {
 		},
 		choosePhrase(phrase) {
 			this.$store.commit("setPhrase", phrase);
-			this.$store.commit("phraseChosen");
 			this.closeModal();
 		}
 	}

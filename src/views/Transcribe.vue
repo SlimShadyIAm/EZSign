@@ -46,9 +46,8 @@ export default {
 		Header,
 		Transcribed
 	},
-	mounted: function() {
-		this.phrases = this.$store.getters.phrases.phrases;
-		console.log(this.phrases);
+	beforeMount: function() {
+		this.phrases = this.$store.getters.getScenarioPhrase.phrases;
 	},
 	data() {
 		return {
