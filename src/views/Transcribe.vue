@@ -14,10 +14,10 @@
             </article>
             <!-- <input type="file" accept="video" class="button" value="Start Transcribing" /> -->
             <label for="file-upload" class="custom-file-upload button">Record Sign Language</label>
-            <input id="file-upload" type="file" accept="video" @change="modalActive = !modalActive" />
+            <input id="file-upload" type="file" accept="video" @change="handlePhrases" />
         </div>
         <Transcribed
-            text="Iced coffee"
+            :text="nextPhrase ? nextPhrase : 'Iced Coffee'"
             :modalActive="modalActive"
             v-on:close="modalActive = !modalActive"
         ></Transcribed>
@@ -38,8 +38,19 @@ export default {
     },
     data() {
         return {
-            modalActive: false
+            modalActive: false,
+            nextIndex: 0,
+            nextPhrase: "",
+            phrases: ["Iced Coffee", "Black", "Thank you!"]
         };
+    },
+    methods: {
+        handlePhrases() {
+            this.nextIndex = this.nextIndex % 3;
+            this.nextPhrase = this.phrases[this.nextIndex];
+            this.modalActive = !this.modalActive;
+            this.nextIndex = this.nextIndex + 1;
+        }
     }
 };
 </script>

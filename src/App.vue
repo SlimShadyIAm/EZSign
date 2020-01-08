@@ -1,7 +1,7 @@
 <template>
     <div id="app">
         <router-view />
-        <Footer v-if="$route.name != 'home'"></Footer>
+        <Footer></Footer>
     </div>
 </template>
 
@@ -18,8 +18,6 @@ export default {
 html,
 body {
     height: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 #app {
