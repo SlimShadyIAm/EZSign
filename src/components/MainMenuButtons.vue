@@ -25,6 +25,8 @@
 					</div>
 				</article>
 			</router-link>
+			<br>
+			<a @click="$router.go()" class="button is-danger">Change interaction scenario</a>
 		</div>
 	</div>
 </template>

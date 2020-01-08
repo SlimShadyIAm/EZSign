@@ -37,7 +37,7 @@ export default {
 }
 @media (max-width: 400px) {
     .hero {
-        margin-bottom: 35px;
+        margin-bottom: 0px;
     }
 }
 .route {
