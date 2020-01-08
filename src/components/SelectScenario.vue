@@ -4,11 +4,6 @@
 		<div class="modal-card">
 			<header class="modal-card-head">
 				<p class="modal-card-title">Select a Scenario</p>
-				<button
-					@click="closeModal"
-					class="delete"
-					aria-label="close"
-				></button>
 			</header>
 			<section class="modal-card-body">
 				<div class="columns">
@@ -45,7 +40,7 @@ export default {
 		},
 		choosePhrase(phrase) {
 			this.$store.commit("setPhrase", phrase);
-			console.log(phrase);
+			this.$store.commit("phraseChosen");
 			this.closeModal();
 		}
 	}
