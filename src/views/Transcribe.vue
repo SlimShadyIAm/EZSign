@@ -47,7 +47,11 @@ export default {
 		Transcribed
 	},
 	beforeMount: function() {
-		this.phrases = this.$store.getters.getScenarioPhrase.phrases;
+		if (!this.$store.getters.getScenarioPhrase) {
+			this.$router.push('/')
+		} else {
+			this.phrases = !this.$store.getters.getScenarioPhrase.phrases;
+		}
 	},
 	data() {
 		return {
