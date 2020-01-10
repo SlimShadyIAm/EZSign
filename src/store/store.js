@@ -11,7 +11,7 @@ export const store = new Vuex.Store({
 				name: "Coffee",
 				phrases: [
 					"Hey! I would like to order an iced coffee, To-go.",
-					"No, i do not want cream.",
+					"No, I do not want cream.",
 					"I would like to pay by card."
 				]
 			},
@@ -37,9 +37,9 @@ export const store = new Vuex.Store({
 				name: "Library",
 				phrases: [
 					"I would like to borrow Harry Potter, Prisoner of Azkaban.",
-					"No, i do not have a membership.",
+					"No, I do not have a membership.",
 					"I want to borrow them until the twenty-third.",
-					"No, i do not want a bag. I will put them in my backpack."
+					"No, I do not want a bag. I will put them in my backpack."
 				]
 			},
 			{

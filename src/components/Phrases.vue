@@ -49,7 +49,9 @@ export default {
         return {
             phrases: [
                 { id: uuid.v4(), phraseText: "Thank you!" },
-                { id: uuid.v4(), phraseText: "Uh oh stinky" }
+                { id: uuid.v4(), phraseText: "I'm fine" },
+                { id: uuid.v4(), phraseText: "Could you help me?" },
+                { id: uuid.v4(), phraseText: "I'll pay by card" }
             ],
             newPhrases: [],
             delete: [],
