@@ -50,7 +50,7 @@ export default {
 		if (!this.$store.getters.getScenarioPhrase) {
 			this.$router.push('/')
 		} else {
-			this.phrases = !this.$store.getters.getScenarioPhrase.phrases;
+			this.phrases = this.$store.getters.getScenarioPhrase.phrases;
 		}
 	},
 	data() {
