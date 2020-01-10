@@ -63,7 +63,7 @@ export default {
 	},
 	methods: {
 		handlePhrases() {
-			this.nextIndex = this.nextIndex % 3;
+			this.nextIndex = this.nextIndex % this.phrases.length;
 			this.nextPhrase = this.phrases[this.nextIndex];
 			this.modalActive = !this.modalActive;
 			this.nextIndex = this.nextIndex + 1;
