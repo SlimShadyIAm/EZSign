@@ -35,11 +35,7 @@ export default {
 .hero {
     margin-bottom: 20px;
 }
-@media (max-width: 400px) {
-    .hero {
-        margin-bottom: 0px;
-    }
-}
+
 .route {
     font-style: italic;
     font-size: 26px;
